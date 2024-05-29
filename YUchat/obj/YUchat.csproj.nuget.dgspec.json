@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\MILOS\\RAF\\Semestar 6\\rvas\\ptojekat\\YUchat-main\\YUchat\\YUchat.csproj": {}
+    "C:\\Users\\ZMAJ OD SIPOVA\\Documents\\GitHub\\YUchat\\YUchat\\YUchat.csproj": {}
   },
   "projects": {
-    "D:\\MILOS\\RAF\\Semestar 6\\rvas\\ptojekat\\YUchat-main\\YUchat\\YUchat.csproj": {
+    "C:\\Users\\ZMAJ OD SIPOVA\\Documents\\GitHub\\YUchat\\YUchat\\YUchat.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MILOS\\RAF\\Semestar 6\\rvas\\ptojekat\\YUchat-main\\YUchat\\YUchat.csproj",
+        "projectUniqueName": "C:\\Users\\ZMAJ OD SIPOVA\\Documents\\GitHub\\YUchat\\YUchat\\YUchat.csproj",
         "projectName": "YUchat",
-        "projectPath": "D:\\MILOS\\RAF\\Semestar 6\\rvas\\ptojekat\\YUchat-main\\YUchat\\YUchat.csproj",
+        "projectPath": "C:\\Users\\ZMAJ OD SIPOVA\\Documents\\GitHub\\YUchat\\YUchat\\YUchat.csproj",
         "packagesPath": "C:\\Users\\ZMAJ OD SIPOVA\\.nuget\\packages\\",
-        "outputPath": "D:\\MILOS\\RAF\\Semestar 6\\rvas\\ptojekat\\YUchat-main\\YUchat\\obj\\",
+        "outputPath": "C:\\Users\\ZMAJ OD SIPOVA\\Documents\\GitHub\\YUchat\\YUchat\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
