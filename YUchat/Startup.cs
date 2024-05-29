@@ -1,7 +1,7 @@
 ﻿using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartupAttribute(typeof(YUchat.Startup))]
+[assembly: OwinStartup(typeof(YUchat.Startup))]
 namespace YUchat
 {
     public partial class Startup

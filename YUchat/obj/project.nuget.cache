@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "dgSpecHash": "5SHnoqbngd/HGDhI9/DlUnZdJRh+8DCS/fTFf5dKrIluotPXUvfYyrkdTPdV3kpeWaHR6GZ7xNO1lnyiWifotg==",
+  "success": true,
+  "projectFilePath": "D:\\MILOS\\RAF\\Semestar 6\\rvas\\ptojekat\\YUchat-main\\YUchat\\YUchat.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ZMAJ OD SIPOVA\\.nuget\\packages\\bootstrap\\5.3.3\\bootstrap.5.3.3.nupkg.sha512",
+    "C:\\Users\\ZMAJ OD SIPOVA\\.nuget\\packages\\fontawesome\\4.7.0\\fontawesome.4.7.0.nupkg.sha512",
+    "C:\\Users\\ZMAJ OD SIPOVA\\.nuget\\packages\\jquery\\3.7.1\\jquery.3.7.1.nupkg.sha512",
+    "C:\\Users\\ZMAJ OD SIPOVA\\.nuget\\packages\\microsoft.aspnet.signalr\\2.2.2\\microsoft.aspnet.signalr.2.2.2.nupkg.sha512",
+    "C:\\Users\\ZMAJ OD SIPOVA\\.nuget\\packages\\microsoft.aspnet.signalr.core\\2.2.2\\microsoft.aspnet.signalr.core.2.2.2.nupkg.sha512",
+    "C:\\Users\\ZMAJ OD SIPOVA\\.nuget\\packages\\microsoft.aspnet.signalr.js\\2.2.2\\microsoft.aspnet.signalr.js.2.2.2.nupkg.sha512",
+    "C:\\Users\\ZMAJ OD SIPOVA\\.nuget\\packages\\microsoft.aspnet.signalr.systemweb\\2.2.2\\microsoft.aspnet.signalr.systemweb.2.2.2.nupkg.sha512",
+    "C:\\Users\\ZMAJ OD SIPOVA\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\ZMAJ OD SIPOVA\\.nuget\\packages\\microsoft.owin\\4.2.2\\microsoft.owin.4.2.2.nupkg.sha512",
+    "C:\\Users\\ZMAJ OD SIPOVA\\.nuget\\packages\\microsoft.owin.host.systemweb\\2.1.0\\microsoft.owin.host.systemweb.2.1.0.nupkg.sha512",
+    "C:\\Users\\ZMAJ OD SIPOVA\\.nuget\\packages\\microsoft.owin.security\\4.2.2\\microsoft.owin.security.4.2.2.nupkg.sha512",
+    "C:\\Users\\ZMAJ OD SIPOVA\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
+    "C:\\Users\\ZMAJ OD SIPOVA\\.nuget\\packages\\newtonsoft.json\\6.0.4\\newtonsoft.json.6.0.4.nupkg.sha512",
+    "C:\\Users\\ZMAJ OD SIPOVA\\.nuget\\packages\\owin\\1.0.0\\owin.1.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

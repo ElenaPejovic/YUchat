@@ -5,6 +5,11 @@ VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YUchat", "YUchat\YUchat.csproj", "{792F9C1A-4A5F-4C77-8154-BAA24617980D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{20AD7568-39DC-49A4-AE6F-3306F4E85567}"
+	ProjectSection(SolutionItems) = preProject
+		YUchat\Register.aspx = YUchat\Register.aspx
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

@@ -1,0 +1,88 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\MILOS\\RAF\\Semestar 6\\rvas\\ptojekat\\YUchat-main\\YUchat\\YUchat.csproj": {}
+  },
+  "projects": {
+    "D:\\MILOS\\RAF\\Semestar 6\\rvas\\ptojekat\\YUchat-main\\YUchat\\YUchat.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\MILOS\\RAF\\Semestar 6\\rvas\\ptojekat\\YUchat-main\\YUchat\\YUchat.csproj",
+        "projectName": "YUchat",
+        "projectPath": "D:\\MILOS\\RAF\\Semestar 6\\rvas\\ptojekat\\YUchat-main\\YUchat\\YUchat.csproj",
+        "packagesPath": "C:\\Users\\ZMAJ OD SIPOVA\\.nuget\\packages\\",
+        "outputPath": "D:\\MILOS\\RAF\\Semestar 6\\rvas\\ptojekat\\YUchat-main\\YUchat\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ZMAJ OD SIPOVA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "dependencies": {
+            "FontAwesome": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "Microsoft.AspNet.SignalR": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Microsoft.Owin": {
+              "target": "Package",
+              "version": "[4.2.2, )"
+            },
+            "Microsoft.Owin.Security": {
+              "target": "Package",
+              "version": "[4.2.2, )"
+            },
+            "NETStandard.Library": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "bootstrap": {
+              "target": "Package",
+              "version": "[5.3.3, )"
+            },
+            "jQuery": {
+              "target": "Package",
+              "version": "[3.7.1, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-arm64": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}
