@@ -394,8 +394,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Code\Messages.cs" />
-    <Content Include="App_Code\Users.cs" />
+    <Compile Include="Messages.cs" />
+    <Compile Include="Users.cs" />
+    <Compile Include="Chat.aspx.cs">
+      <DependentUpon>Chat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chat.aspx.designer.cs">
+      <DependentUpon>Chat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChatHub.cs" />
     <Compile Include="ConnClass.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -421,6 +429,7 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Chat.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -430,7 +439,6 @@
     <Content Include="Content\icheck-bootstrap.css" />
     <Content Include="Content\icheck-bootstrap.min.css" />
     <Content Include="Content\style.css" />
-    <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -448,6 +456,11 @@
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="images\DP\Altaf2015-12-tekla.com-new-images-09.jpg" />
+    <Content Include="images\DP\AltafAjpg.jpg" />
+    <Content Include="images\DP\AltafHBD-All-Uttari01.jpg" />
+    <Content Include="images\DP\dummy.png" />
+    <Content Include="images\dummy.png" />
     <Content Include="Login.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="Scripts\bootstrap.js" />
@@ -504,6 +517,7 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Code\" />
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
