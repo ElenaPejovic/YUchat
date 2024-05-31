@@ -10,10 +10,10 @@
 
     <style>
         body {
-            background-color: #1a252f; /* Tamnija plava za pozadinu */
+            background-color: #1a252f;
             color: #fff;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            height: 100vh; /* Za visinu ekrana */
+            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -21,7 +21,7 @@
 
         .login-box {
             width: 360px;
-            background: #2c3e50; /* Tamno plava za login box */
+            background: #2c3e50;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
@@ -65,12 +65,12 @@
         }
 
         .btn-success {
-            background-color: #3498db;
+            background-color: #2c3e50;
             border-color: #2980b9;
         }
 
         .btn-primary {
-            background-color: #2980b9;
+            background-color: #2c3e50;
             border-color: #1c598a;
         }
 
@@ -96,11 +96,15 @@
                     <span class="fa fa-lock form-control-feedback"></span>
                 </div>
                 <div class="row">
-                    <div class="col-xs-4">
-                        <asp:Button ID="btnSignIn" runat="server" OnClick="btnSignIn_Click" Text="Uloguj se" CssClass="btn btn-success btn-block btn-flat" /><br />
-                    </div>
-                    <div class="col-xs-8">
-                        <a href="Register.aspx" class="btn btn-primary btn-block btn-flat">Registruj se</a>
+                    <div class="col-6 mx-auto">
+                        <div class="d-flex align-items-center justify-content-evenly">
+                            <div class="col-xs-5">
+                                <asp:Button ID="btnSignIn" runat="server" OnClick="btnSignIn_Click" Text="Uloguj se" CssClass="btn btn-success btn-block btn-flat" /><br />
+                            </div>
+                            <div class="col-xs-6">
+                                <a href="Register.aspx" class="btn btn-primary btn-block btn-flat">Registruj se</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

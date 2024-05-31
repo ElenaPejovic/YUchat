@@ -9,7 +9,6 @@ namespace YUchat
 {
     public partial class Login : System.Web.UI.Page
     {
-        //Class Object
         ConnClass ConnC = new ConnClass();
         protected void Page_Load(object sender, EventArgs e)
         {

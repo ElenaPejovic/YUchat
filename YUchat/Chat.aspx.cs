@@ -52,7 +52,6 @@ namespace YUchat
         {
           
             string serverPath = HttpContext.Current.Server.MapPath("~/");
-            //path = serverPath + path;
             if (FileUpload1.HasFile)
             {
                 string FileWithPat = serverPath + @"images/DP/" + UserName + FileUpload1.FileName;
@@ -89,8 +88,6 @@ namespace YUchat
                 using (Graphics gr = Graphics.FromImage(cpy))
                 {
                     gr.Clear(Color.Transparent);
-
-                    // This is said to give best quality when resizing images
                     gr.InterpolationMode = InterpolationMode.HighQualityBicubic;
 
                     gr.DrawImage(img,

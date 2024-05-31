@@ -3,11 +3,9 @@ body, h1, p {
     margin: 0;
     padding: 0;
 }
-
-/* Opšti stilovi */
 body {
-    background-color: #F5F5F5; /* Svetlosiva pozadina */
-    font-family: 'Roboto', sans-serif; /* Retro font */
+    background-color: #F5F5F5;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
 }
 
@@ -18,14 +16,14 @@ body {
 }
 
 .yuchat-title {
-    font-family: 'Pacifico', cursive; /* Veliki, retro font */
+    font-family: 'Pacifico', cursive;
     font-size: 72px;
-    color: #8B0000; /* Tamno crvena boja */
+    color: #8B0000;
     margin-bottom: 20px;
 }
 
 .slogan {
     font-size: 24px;
-    color: #333; /* Tamno siva boja */
+    color: #333;
     margin-bottom: 40px;
 }

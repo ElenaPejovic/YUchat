@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\epele\\source\\repos\\YUchat\\YUchat\\YUchat.csproj": {}
+    "C:\\Users\\ZMAJ OD SIPOVA\\Documents\\GitHub\\YUchat\\YUchat\\YUchat.csproj": {}
   },
   "projects": {
-    "C:\\Users\\epele\\source\\repos\\YUchat\\YUchat\\YUchat.csproj": {
+    "C:\\Users\\ZMAJ OD SIPOVA\\Documents\\GitHub\\YUchat\\YUchat\\YUchat.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\epele\\source\\repos\\YUchat\\YUchat\\YUchat.csproj",
+        "projectUniqueName": "C:\\Users\\ZMAJ OD SIPOVA\\Documents\\GitHub\\YUchat\\YUchat\\YUchat.csproj",
         "projectName": "YUchat",
-        "projectPath": "C:\\Users\\epele\\source\\repos\\YUchat\\YUchat\\YUchat.csproj",
-        "packagesPath": "C:\\Users\\epele\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\epele\\source\\repos\\YUchat\\YUchat\\obj\\",
+        "projectPath": "C:\\Users\\ZMAJ OD SIPOVA\\Documents\\GitHub\\YUchat\\YUchat\\YUchat.csproj",
+        "packagesPath": "C:\\Users\\ZMAJ OD SIPOVA\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ZMAJ OD SIPOVA\\Documents\\GitHub\\YUchat\\YUchat\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\epele\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ZMAJ OD SIPOVA\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

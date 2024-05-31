@@ -344,11 +344,7 @@
 
 
     var uniRegexp = 0;
-
-    //var cdn_base = "http://172.18.0.4:84/Emoji/dist/emojione/";
      var cdn_base = "https://cdnjs.cloudflare.com/ajax/libs/emojione/";
-
-   // var cdn_base = "http://localhost:49251/Emoji/dist/emojione/";
     
      function detectSupportMode() {
         return (typeof emojione['jsEscapeMap']).toLowerCase() === 'object' ? emojione.cacheBustParam === "?v=1.2.4" ? 2 : 1 : 0;
@@ -379,7 +375,6 @@
         emojione.imagePathSVGSprites = cdn_base + "/sprites/emojione.sprites.svg";
 
         $.each(emojione.emojioneList, function (shortname, keys) {
-            // fix shortnames for emojione v1.5.0
             emojioneList[shortname.replace('-', '_')] = keys;
         });
 
@@ -631,7 +626,6 @@
 
             .on("@editor.paste", function (element) {
                 stayFocused = true;
-                // inserts invisible character for fix caret
                 pasteHtmlAtCaret('<span>&#8291;</span>');
 
                 var sel = saveSelection(element[0]),
@@ -679,7 +673,6 @@
 
             .on("@change", function (element) {
                 var html = element.html().replace(/<\/?(?:div|span|p)[^>]*>/ig, '');
-                // clear input, fix: chrome add <br> on contenteditable is empty
                 if (!html.length || /^<br[^>]*>$/i.test(html)) {
                     self.setText('', false);
                 }

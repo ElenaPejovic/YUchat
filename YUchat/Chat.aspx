@@ -26,11 +26,8 @@
 
 
         $(function () {
-
-            // Declare a proxy to reference the hub. 
             var chatHub = $.connection.chatHub;
             registerClientMethods(chatHub);
-            // Start Hub
             $.connection.hub.start().done(function () {
 
                 registerEvents(chatHub)
@@ -63,8 +60,6 @@
                 chatHub.server.connect(name);
 
             }
-
-            // Clear Chat
             $('#btnClearChat').click(function () {
 
                 var msg = $("#divChatWindow").html();
@@ -100,35 +95,23 @@
         }
 
         function registerClientMethods(chatHub) {
-
-
-            // Calls when user successfully logged in
             chatHub.client.onConnected = function (id, userName, allUsers, messages, times) {
 
                 $('#hdId').val(id);
                 $('#hdUserName').val(userName);
                 $('#spanUser').html(userName);
-
-                // Add All Users
                 for (i = 0; i < allUsers.length; i++) {
 
                     AddUser(chatHub, allUsers[i].ConnectionId, allUsers[i].UserName, allUsers[i].UserImage, allUsers[i].LoginTime);
                 }
-
-                // Add Existing Messages
                 for (i = 0; i < messages.length; i++) {
                     AddMessage(messages[i].UserName, messages[i].Message, messages[i].Time, messages[i].UserImage);
 
                 }
             }
-
-            // On New User Connected
             chatHub.client.onNewUserConnected = function (id, name, UserImage, loginDate) {
                 AddUser(chatHub, id, name, UserImage, loginDate);
             }
-
-
-            // On User Disconnected
             chatHub.client.onUserDisconnected = function (id, userName) {
 
                 $('#Div' + id).remove();
@@ -137,7 +120,7 @@
                 $('#' + ctrId).remove();
 
 
-                var disc = $('<div class="disconnect">"' + userName + '" logged off.</div>');
+                var disc = $('<div class="disconnect">"' + userName + '" je offline.</div>');
 
                 $(disc).hide();
                 $('#divusers').prepend(disc);
@@ -188,8 +171,6 @@
                     ' <div class="direct-chat-text" >' + message + '</div> </div>';
 
                 $('#' + ctrId).find('#divMessage').append(divChatP);
-
-                // Apply Slim Scroll Bar in Private Chat Box
                 var ScrollHeight = $('#' + ctrId).find('#divMessage')[0].scrollHeight;
                 $('#' + ctrId).find('#divMessage').slimScroll({
                     height: ScrollHeight
@@ -211,7 +192,6 @@
             var userId = $('#hdId').val();
 
             var code = "";
-            // var UserImage = GetUserImage(name);
 
             var Clist = "";
             if (userId == id) {
@@ -294,8 +274,6 @@
             $('#divChatWindow').append(divChat);
 
             var height = $('#divChatWindow')[0].scrollHeight;
-
-            // Apply Slim Scroll Bar in Group Chat Box
             $('#divChatWindow').slimScroll({
                 height: height
             });
@@ -305,7 +283,7 @@
         }
 
         function OpenPrivateChatBox(chatHub, userId, ctrId, userName) {
-            var PWClass = 'info'; // Umesto PWClass koja se menja, ovde postavljamo fiksnu vrednost 'info'
+            var PWClass = 'info';
 
             $('#PWCount').val(PWClass);
             var div1 = ' <div class="col-md-4"> <div  id="' + ctrId + '" class="box box-solid box-' + PWClass + ' direct-chat direct-chat-' + PWClass + '">' +
@@ -318,7 +296,7 @@
                 '    <i class="fa fa-minus"></i>' +
                 '  </button>' +
                 '  <button id="imgDelete" type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button></div>' +
-                '  <img src="pics/pigeon.png" class="golub-image" alt="Golub">' + // Dodajte ovu liniju za sliku goluba
+                '  <img src="pics/pigeon.png" class="golub-image" alt="Golub">' +
                 '</div>' +
 
                 ' <div class="box-body">' +
@@ -329,10 +307,10 @@
                 '  </div>' +
                 '  <div class="box-footer">' +
 
-                '    <input type="text" id="txtPrivateMessage" name="message" placeholder="Type Message ..." class="form-control"  />' +
+                '    <input type="text" id="txtPrivateMessage" name="message" placeholder="Ukucajte poruku ..." class="form-control"  />' +
 
                 '  <div class="input-group">' +
-                '    <input type="text" name="message" placeholder="Type Message ..." class="form-control" style="visibility:hidden;" />' +
+                '    <input type="text" name="message" placeholder="Ukucajte poruku ..." class="form-control" style="visibility:hidden;" />' +
                 '   <span class="input-group-btn">' +
                 '          <input type="button" id="btnSendMessage" class="btn btn-' + PWClass + ' btn-flat" value="send" />' +
                 '   </span>' +
@@ -344,13 +322,9 @@
 
 
             var $div = $(div1);
-
-            // Closing Private Chat Box
             $div.find('#imgDelete').click(function () {
                 $('#' + ctrId).remove();
             });
-
-            // Send Button event in Private Chat
             $div.find("#btnSendMessage").click(function () {
                 $textBox = $div.find("#txtPrivateMessage");
                 var msg = $textBox.val();
@@ -359,21 +333,15 @@
                     $textBox.val('');
                 }
             });
-
-            // Text Box event on Enter Button
             $div.find("#txtPrivateMessage").keypress(function (e) {
                 if (e.which == 13) {
                     $div.find("#btnSendMessage").click();
                 }
             });
-
-            // Clear Message Count on Mouse over           
             $div.find("#divMessage").mouseover(function () {
                 $("#MsgCountP").html('0');
                 $("#MsgCountP").attr("title", '0 Novih poruka');
             });
-
-            // Append private chat div inside the main div
             $('#PriChatDiv').append($div);
             var msgTextbox = $div.find("#txtPrivateMessage");
             $(msgTextbox).emojioneArea();

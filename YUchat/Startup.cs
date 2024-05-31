@@ -14,10 +14,7 @@ namespace YUchat
     {
         public void Configuration(IAppBuilder app)
         {
-            // OWIN specific configuration
             app.UseCors(CorsOptions.AllowAll);
-
-            // Static file configuration
             var frontendPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "frontend");
             var physicalFileSystem = new PhysicalFileSystem(frontendPath);
             var options = new Microsoft.Owin.StaticFiles.FileServerOptions
@@ -30,8 +27,6 @@ namespace YUchat
             options.DefaultFilesOptions.DefaultFileNames = new[] { "index.html" };
 
             app.UseFileServer(options);
-
-            // SignalR configuration
             app.MapSignalR();
         }
     }
