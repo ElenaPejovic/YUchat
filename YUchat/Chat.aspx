@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Chat.aspx.cs" Inherits="YUchat.Chat" %>
+﻿﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Chat.aspx.cs" Inherits="YUchat.Chat" %>
 
 <!DOCTYPE html>
 
@@ -9,6 +9,8 @@
     <link href="Content/bootstrap.css" rel="stylesheet" />
     <link href="Content/style.css" rel="stylesheet" />
     <link href="Content/font-awesome.css" rel="stylesheet" />
+    <link rel="icon" href="/pics/pigeon.png" type="image/x-icon">
+
 
     <script src="Scripts/jquery-3.2.1.min.js"></script>
     <script src="Scripts/jquery.signalR-2.4.3.min.js"></script>
@@ -32,7 +34,7 @@
             $.connection.hub.start().done(function () {
 
                 registerEvents(chatHub)
-               
+
             });
             $(document).on('change', '#<%= FileUpload1.ClientID%>', function (e) {
 
@@ -54,12 +56,12 @@
 
         function registerEvents(chatHub) {
 
-    
+
             var name = '<%= this.UserName %>';
-           
+
             if (name.length > 0) {
                 chatHub.server.connect(name);
-              
+
             }
 
             // Clear Chat
@@ -78,13 +80,13 @@
             $('#btnSendMsg').click(function () {
 
                 var msg = $("#txtMessage").val();
-               
+
                 if (msg.length > 0) {
 
                     var userName = $('#hdUserName').val();
-                 
+
                     var date = GetCurrentDateTime(new Date());
-                    
+
                     chatHub.server.sendMessageToAll(userName, msg, date);
                     $("#txtMessage").val('');
                 }
@@ -99,14 +101,14 @@
 
         function registerClientMethods(chatHub) {
 
-           
+
             // Calls when user successfully logged in
             chatHub.client.onConnected = function (id, userName, allUsers, messages, times) {
 
                 $('#hdId').val(id);
                 $('#hdUserName').val(userName);
                 $('#spanUser').html(userName);
-               
+
                 // Add All Users
                 for (i = 0; i < allUsers.length; i++) {
 
@@ -116,10 +118,10 @@
                 // Add Existing Messages
                 for (i = 0; i < messages.length; i++) {
                     AddMessage(messages[i].UserName, messages[i].Message, messages[i].Time, messages[i].UserImage);
-                 
+
                 }
             }
-            
+
             // On New User Connected
             chatHub.client.onNewUserConnected = function (id, name, UserImage, loginDate) {
                 AddUser(chatHub, id, name, UserImage, loginDate);
@@ -194,7 +196,7 @@
                 });
             }
 
-           
+
         }
 
         function GetCurrentDateTime(now) {
@@ -290,7 +292,7 @@
                 ' <div class="direct-chat-text" >' + message + '</div> </div>';
 
             $('#divChatWindow').append(divChat);
-         
+
             var height = $('#divChatWindow')[0].scrollHeight;
 
             // Apply Slim Scroll Bar in Group Chat Box
@@ -303,15 +305,7 @@
         }
 
         function OpenPrivateChatBox(chatHub, userId, ctrId, userName) {
-
-            var PWClass = $('#PWCount').val();
-
-            if ($('#PWCount').val() == 'info')
-                PWClass = 'danger';
-            else if ($('#PWCount').val() == 'danger')
-                PWClass = 'warning';
-            else
-                PWClass = 'info';
+            var PWClass = 'info'; // Umesto PWClass koja se menja, ovde postavljamo fiksnu vrednost 'info'
 
             $('#PWCount').val(PWClass);
             var div1 = ' <div class="col-md-4"> <div  id="' + ctrId + '" class="box box-solid box-' + PWClass + ' direct-chat direct-chat-' + PWClass + '">' +
@@ -323,7 +317,9 @@
                 ' <button type="button" class="btn btn-box-tool" data-widget="collapse">' +
                 '    <i class="fa fa-minus"></i>' +
                 '  </button>' +
-                '  <button id="imgDelete" type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button></div></div>' +
+                '  <button id="imgDelete" type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button></div>' +
+                '  <img src="pics/pigeon.png" class="golub-image" alt="Golub">' + // Dodajte ovu liniju za sliku goluba
+                '</div>' +
 
                 ' <div class="box-body">' +
                 ' <div id="divMessage" class="direct-chat-messages">' +
@@ -333,7 +329,6 @@
                 '  </div>' +
                 '  <div class="box-footer">' +
 
-
                 '    <input type="text" id="txtPrivateMessage" name="message" placeholder="Type Message ..." class="form-control"  />' +
 
                 '  <div class="input-group">' +
@@ -342,12 +337,10 @@
                 '          <input type="button" id="btnSendMessage" class="btn btn-' + PWClass + ' btn-flat" value="send" />' +
                 '   </span>' +
 
-
                 '  </div>' +
 
                 ' </div>' +
                 ' </div></div>';
-
 
 
             var $div = $(div1);
@@ -359,9 +352,7 @@
 
             // Send Button event in Private Chat
             $div.find("#btnSendMessage").click(function () {
-
                 $textBox = $div.find("#txtPrivateMessage");
-
                 var msg = $textBox.val();
                 if (msg.length > 0) {
                     chatHub.server.sendPrivateMessage(userId, msg);
@@ -378,7 +369,6 @@
 
             // Clear Message Count on Mouse over           
             $div.find("#divMessage").mouseover(function () {
-
                 $("#MsgCountP").html('0');
                 $("#MsgCountP").attr("title", '0 Novih poruka');
             });
@@ -389,13 +379,6 @@
             $(msgTextbox).emojioneArea();
         }
 
-        function ParseEmoji(div) {
-            var input = $(div).html();
-
-            var output = emojione.unicodeToImage(input);
-
-            $(div).html(output);
-        }
 
     </script>
 
@@ -405,7 +388,7 @@
         <asp:ScriptManager ID="ScriptManager1" runat="server" ></asp:ScriptManager>
         <div class="content-wrapper">
 
-                   <header class="main-header" style="background:#bedaeb">
+                   <header class="main-header" >
         <!-- Logo -->
         <a href="index2.html" class="logo">
           <!-- mini logo for sidebar mini 50x50 pixels -->
@@ -460,7 +443,7 @@
                     <!-- DIRECT CHAT PRIMARY -->
                     <div class="box box-primary direct-chat direct-chat-primary">
                        <div class="box-header with-border">
-                            <h3 class="box-title" style="color:dimgrey;">Dobrodosli <span id='spanUser'></span></h3>
+                            <h3 class="box-title" style="color:dimgrey;">Dobrodošli <span id='spanUser'></span></h3>
                            <div class="box-tools pull-right">
                                <button type="button" class="btn btn-box-tool" id="btnClearChat" data-toggle="tooltip" title="Clear Chat">
                                    <i class="fa fa-trash-o"></i>
@@ -541,12 +524,7 @@
                     </div>
 </div>
 
-                <!-- /.col -->
-
-
-                <!-- /.col -->
-
-                <!-- /.col -->
+                
             </div>
             <!-- /.row -->
         </div>
@@ -636,6 +614,21 @@
         </div>
 
         <style>
+            .direct-chat .golub-image {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                width: 30px;
+                height: 30px;
+            }
+            .main-header{
+                background-color: #2c3e50; 
+                color: #fff;
+            }
+            .box-header{
+                background-color: #2c3e50; 
+                color: #fff;
+            }
             .upload-btn-wrapper {
                 position: relative;
                 overflow: hidden;
