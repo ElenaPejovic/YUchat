@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>YUchat - Povežite se sa svojim prijateljima</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #555;
+            background-color: #f9f9f9;
+            padding-top: 70px; /* Za navbar */
+        }
+
+        .navbar {
+            background-color: #2c3e50; /* Tamno plava */
+            border: none;
+            border-radius: 0;
+        }
+
+        .navbar-brand, .navbar-nav li a {
+            color: #fff !important;
+        }
+
+        .jumbotron {
+            background-color: #2c3e50; /* Tamno plava */
+            color: #fff;
+            text-align: center;
+            padding: 100px 25px;
+            margin-bottom: 0;
+        }
+
+        .features {
+            background-color: #fff;
+            padding: 50px 0;
+        }
+
+        .feature {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+            .feature h3 {
+                color: #2c3e50;
+            }
+
+            .feature p {
+                font-size: 18px;
+            }
+
+        .signup {
+            background-color: #2c3e50; /* Tamno plava */
+            color: #fff;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+            .signup h2 {
+                margin-bottom: 40px;
+            }
+
+        .btn-signup {
+            background-color: #3498db; /* Plava */
+            border: none;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+
+            .btn-signup:hover {
+                background-color: #2980b9; /* Tamnija plava */
+            }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">YUchat</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Početna</a></li>
+                    <li><a href="../Login.aspx">Ulogujte se</a></li>
+                    <li><a href="../Register.aspx">Registrujte se</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Dobrodošli na YUchat!</h1>
+            <p>Povežite se sa svojim prijateljima, delite trenutke i stvarajte nove uspomene zajedno.</p>
+            <a href="../Register.aspx" class="btn btn-lg btn-signup">Registrujte se sada</a>
+        </div>
+    </div>
+
+    <div id="features" class="features">
+        <div class="container">
+            <h2 class="text-center">Zašto koristiti YUchat?</h2>
+            <div class="row">
+                <div class="col-md-4 feature">
+                    <h3>Jednostavan za korišćenje</h3>
+                    <p>YUchat je jednostavan za korišćenje, bez obzira na vaše tehničko znanje. Samo se prijavite i počnite da razgovarate sa svojim prijateljima.</p>
+                </div>
+                <div class="col-md-4 feature">
+                    <h3>Dostupan svuda</h3>
+                    <p>YUchat je dostupan na svim uređajima - računarima, tabletima i mobilnim telefonima. Povežite se sa svojim prijateljima bilo gde ibilo kad.</p>
+                </div>
+                <div class="col-md-4 feature">
+                    <h3>Bezbedan i privatan</h3>
+                    <p>Vaši razgovori su sigurni i privatni na YUchat platformi. Pružamo najviši nivo zaštite vaših podataka.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="signup" class="signup">
+        <div class="container">
+            <h2>Registrujte se sada i počnite sa YUchatom!</h2>
+            <p>Pridružite se milionima korisnika širom sveta koji već koriste YUchat. Registracija je brza, jednostavna i besplatna.</p>
+            <a href="../Register.aspx" class="btn btn-lg btn-signup">Registrujte se sada</a>
+        </div>
+    </div>
+
+</body>
+</html>
+

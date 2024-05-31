@@ -62,7 +62,13 @@
     <PackageReference Include="Microsoft.Owin">
       <Version>4.2.2</Version>
     </PackageReference>
+    <PackageReference Include="Microsoft.Owin.Cors">
+      <Version>4.2.2</Version>
+    </PackageReference>
     <PackageReference Include="Microsoft.Owin.Security">
+      <Version>4.2.2</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Owin.StaticFiles">
       <Version>4.2.2</Version>
     </PackageReference>
     <PackageReference Include="NETStandard.Library" Version="2.0.0" />
@@ -441,6 +447,9 @@
     <Content Include="Content\style.css" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="frontend\css\styles.css" />
+    <Content Include="frontend\index.html" />
+    <Content Include="frontend\js\JavaScript.js" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -462,6 +471,7 @@
     <Content Include="images\DP\dummy.png" />
     <Content Include="images\dummy.png" />
     <Content Include="Login.aspx" />
+    <Content Include="pics\pigeon.png" />
     <Content Include="Register.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />

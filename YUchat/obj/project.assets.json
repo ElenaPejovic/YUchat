@@ -233,6 +233,15 @@
       "jQuery/3.7.1": {
         "type": "package"
       },
+      "Microsoft.AspNet.Cors/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/System.Web.Cors.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Cors.dll": {}
+        }
+      },
       "Microsoft.AspNet.SignalR/2.2.2": {
         "type": "package",
         "dependencies": {
@@ -313,6 +322,37 @@
           }
         }
       },
+      "Microsoft.Owin.Cors/4.2.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Cors": "5.0.0",
+          "Microsoft.Owin": "4.2.2",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Cors.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Cors.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Owin.FileSystems/4.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.Owin.FileSystems.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.FileSystems.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Owin.Host.SystemWeb/2.1.0": {
         "type": "package",
         "dependencies": {
@@ -346,6 +386,24 @@
         },
         "runtime": {
           "lib/net45/Microsoft.Owin.Security.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Owin.StaticFiles/4.2.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin": "4.2.2",
+          "Microsoft.Owin.FileSystems": "4.2.2",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.StaticFiles.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.StaticFiles.dll": {
             "related": ".xml"
           }
         }
@@ -620,6 +678,15 @@
       "jQuery/3.7.1": {
         "type": "package"
       },
+      "Microsoft.AspNet.Cors/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/System.Web.Cors.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Cors.dll": {}
+        }
+      },
       "Microsoft.AspNet.SignalR/2.2.2": {
         "type": "package",
         "dependencies": {
@@ -700,6 +767,37 @@
           }
         }
       },
+      "Microsoft.Owin.Cors/4.2.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Cors": "5.0.0",
+          "Microsoft.Owin": "4.2.2",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Cors.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Cors.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Owin.FileSystems/4.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.Owin.FileSystems.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.FileSystems.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Owin.Host.SystemWeb/2.1.0": {
         "type": "package",
         "dependencies": {
@@ -733,6 +831,24 @@
         },
         "runtime": {
           "lib/net45/Microsoft.Owin.Security.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Owin.StaticFiles/4.2.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin": "4.2.2",
+          "Microsoft.Owin.FileSystems": "4.2.2",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.StaticFiles.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.StaticFiles.dll": {
             "related": ".xml"
           }
         }
@@ -1007,6 +1123,15 @@
       "jQuery/3.7.1": {
         "type": "package"
       },
+      "Microsoft.AspNet.Cors/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/System.Web.Cors.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Cors.dll": {}
+        }
+      },
       "Microsoft.AspNet.SignalR/2.2.2": {
         "type": "package",
         "dependencies": {
@@ -1087,6 +1212,37 @@
           }
         }
       },
+      "Microsoft.Owin.Cors/4.2.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Cors": "5.0.0",
+          "Microsoft.Owin": "4.2.2",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Cors.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Cors.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Owin.FileSystems/4.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.Owin.FileSystems.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.FileSystems.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Owin.Host.SystemWeb/2.1.0": {
         "type": "package",
         "dependencies": {
@@ -1120,6 +1276,24 @@
         },
         "runtime": {
           "lib/net45/Microsoft.Owin.Security.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Owin.StaticFiles/4.2.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin": "4.2.2",
+          "Microsoft.Owin.FileSystems": "4.2.2",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.StaticFiles.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.StaticFiles.dll": {
             "related": ".xml"
           }
         }
@@ -1394,6 +1568,15 @@
       "jQuery/3.7.1": {
         "type": "package"
       },
+      "Microsoft.AspNet.Cors/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/System.Web.Cors.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Cors.dll": {}
+        }
+      },
       "Microsoft.AspNet.SignalR/2.2.2": {
         "type": "package",
         "dependencies": {
@@ -1474,6 +1657,37 @@
           }
         }
       },
+      "Microsoft.Owin.Cors/4.2.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Cors": "5.0.0",
+          "Microsoft.Owin": "4.2.2",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Cors.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Cors.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Owin.FileSystems/4.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.Owin.FileSystems.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.FileSystems.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Owin.Host.SystemWeb/2.1.0": {
         "type": "package",
         "dependencies": {
@@ -1507,6 +1721,24 @@
         },
         "runtime": {
           "lib/net45/Microsoft.Owin.Security.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Owin.StaticFiles/4.2.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin": "4.2.2",
+          "Microsoft.Owin.FileSystems": "4.2.2",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.StaticFiles.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.StaticFiles.dll": {
             "related": ".xml"
           }
         }
@@ -1781,6 +2013,15 @@
       "jQuery/3.7.1": {
         "type": "package"
       },
+      "Microsoft.AspNet.Cors/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/System.Web.Cors.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Web.Cors.dll": {}
+        }
+      },
       "Microsoft.AspNet.SignalR/2.2.2": {
         "type": "package",
         "dependencies": {
@@ -1861,6 +2102,37 @@
           }
         }
       },
+      "Microsoft.Owin.Cors/4.2.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.Cors": "5.0.0",
+          "Microsoft.Owin": "4.2.2",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.Cors.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Cors.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Owin.FileSystems/4.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Microsoft.Owin.FileSystems.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.FileSystems.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Owin.Host.SystemWeb/2.1.0": {
         "type": "package",
         "dependencies": {
@@ -1894,6 +2166,24 @@
         },
         "runtime": {
           "lib/net45/Microsoft.Owin.Security.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Owin.StaticFiles/4.2.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Owin": "4.2.2",
+          "Microsoft.Owin.FileSystems": "4.2.2",
+          "Owin": "1.0.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Owin.StaticFiles.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.StaticFiles.dll": {
             "related": ".xml"
           }
         }
@@ -2082,6 +2372,18 @@
         "jquery.nuspec"
       ]
     },
+    "Microsoft.AspNet.Cors/5.0.0": {
+      "sha512": "jNwFhEnm0jRlaRCgHEk52hJQltVoM2Bllysv2NtPYrgsVWyS3r5BOtCXkM/lEZ5AdUUBOvha+4QAVcVp1MZp5g==",
+      "type": "package",
+      "path": "microsoft.aspnet.cors/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/System.Web.Cors.dll",
+        "microsoft.aspnet.cors.5.0.0.nupkg.sha512",
+        "microsoft.aspnet.cors.nuspec"
+      ]
+    },
     "Microsoft.AspNet.SignalR/2.2.2": {
       "sha512": "r0n6alLVRcXlu4H3Cqqr98i03rPN+VkG87Po9Mzn8it8RopJs0GA9gSG7+NzexWk7LiR+Oc+7i8P+22U1sXoCg==",
       "type": "package",
@@ -2162,6 +2464,34 @@
         "microsoft.owin.nuspec"
       ]
     },
+    "Microsoft.Owin.Cors/4.2.2": {
+      "sha512": "v5+J/LZ40kA7nmJi42nyOvZ10HrkLzg11tg9Gyxgns45QjmVBBuEhtUscs+JszL4YEglFwQPAK/iwcBIqAbb/w==",
+      "type": "package",
+      "path": "microsoft.owin.cors/4.2.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/net45/Microsoft.Owin.Cors.dll",
+        "lib/net45/Microsoft.Owin.Cors.xml",
+        "microsoft.owin.cors.4.2.2.nupkg.sha512",
+        "microsoft.owin.cors.nuspec"
+      ]
+    },
+    "Microsoft.Owin.FileSystems/4.2.2": {
+      "sha512": "GDYA+V0xJkqdp5lRehCJ3vT8Fp1OjmKLvKibEvYTgwg41CtUXduo5xKpsfnZ2IYCszUSrGJ8OdUKtoFc7mpMcw==",
+      "type": "package",
+      "path": "microsoft.owin.filesystems/4.2.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/net45/Microsoft.Owin.FileSystems.dll",
+        "lib/net45/Microsoft.Owin.FileSystems.xml",
+        "microsoft.owin.filesystems.4.2.2.nupkg.sha512",
+        "microsoft.owin.filesystems.nuspec"
+      ]
+    },
     "Microsoft.Owin.Host.SystemWeb/2.1.0": {
       "sha512": "S+YOPgtQuXlKGh1OZCVzvmz++2ibNeACzDlMpeXFN1QBUf9l+gstfV0f5hTbhmkDBE8LrSCBWu+9Rrte+ivNhg==",
       "type": "package",
@@ -2189,6 +2519,20 @@
         "lib/net45/Microsoft.Owin.Security.xml",
         "microsoft.owin.security.4.2.2.nupkg.sha512",
         "microsoft.owin.security.nuspec"
+      ]
+    },
+    "Microsoft.Owin.StaticFiles/4.2.2": {
+      "sha512": "yRflUgZxWRMUap4QqDjev9q3tY9eGh6JETYKTD5UaVxbggRRfxhQ65QH/8vo6Wc9rSAlPIrLtd21EFfv83lxvQ==",
+      "type": "package",
+      "path": "microsoft.owin.staticfiles/4.2.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/net45/Microsoft.Owin.StaticFiles.dll",
+        "lib/net45/Microsoft.Owin.StaticFiles.xml",
+        "microsoft.owin.staticfiles.4.2.2.nupkg.sha512",
+        "microsoft.owin.staticfiles.nuspec"
       ]
     },
     "NETStandard.Library/2.0.0": {
@@ -2366,31 +2710,33 @@
       "FontAwesome >= 4.7.0",
       "Microsoft.AspNet.SignalR >= 2.2.2",
       "Microsoft.Owin >= 4.2.2",
+      "Microsoft.Owin.Cors >= 4.2.2",
       "Microsoft.Owin.Security >= 4.2.2",
+      "Microsoft.Owin.StaticFiles >= 4.2.2",
       "NETStandard.Library >= 2.0.0",
       "bootstrap >= 5.3.3",
       "jQuery >= 3.7.1"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ZMAJ OD SIPOVA\\.nuget\\packages\\": {},
+    "C:\\Users\\epele\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ZMAJ OD SIPOVA\\Documents\\GitHub\\YUchat\\YUchat\\YUchat.csproj",
+      "projectUniqueName": "C:\\Users\\epele\\source\\repos\\YUchat\\YUchat\\YUchat.csproj",
       "projectName": "YUchat",
-      "projectPath": "C:\\Users\\ZMAJ OD SIPOVA\\Documents\\GitHub\\YUchat\\YUchat\\YUchat.csproj",
-      "packagesPath": "C:\\Users\\ZMAJ OD SIPOVA\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ZMAJ OD SIPOVA\\Documents\\GitHub\\YUchat\\YUchat\\obj\\",
+      "projectPath": "C:\\Users\\epele\\source\\repos\\YUchat\\YUchat\\YUchat.csproj",
+      "packagesPath": "C:\\Users\\epele\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\epele\\source\\repos\\YUchat\\YUchat\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\ZMAJ OD SIPOVA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\epele\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2422,7 +2768,15 @@
             "target": "Package",
             "version": "[4.2.2, )"
           },
+          "Microsoft.Owin.Cors": {
+            "target": "Package",
+            "version": "[4.2.2, )"
+          },
           "Microsoft.Owin.Security": {
+            "target": "Package",
+            "version": "[4.2.2, )"
+          },
+          "Microsoft.Owin.StaticFiles": {
             "target": "Package",
             "version": "[4.2.2, )"
           },
