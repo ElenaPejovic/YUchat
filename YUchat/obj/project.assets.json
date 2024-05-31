@@ -233,6 +233,9 @@
       "jQuery/3.7.1": {
         "type": "package"
       },
+      "Jquery.slimScroll/1.3.1": {
+        "type": "package"
+      },
       "Microsoft.AspNet.Cors/5.0.0": {
         "type": "package",
         "compile": {
@@ -676,6 +679,9 @@
         "type": "package"
       },
       "jQuery/3.7.1": {
+        "type": "package"
+      },
+      "Jquery.slimScroll/1.3.1": {
         "type": "package"
       },
       "Microsoft.AspNet.Cors/5.0.0": {
@@ -1123,6 +1129,9 @@
       "jQuery/3.7.1": {
         "type": "package"
       },
+      "Jquery.slimScroll/1.3.1": {
+        "type": "package"
+      },
       "Microsoft.AspNet.Cors/5.0.0": {
         "type": "package",
         "compile": {
@@ -1566,6 +1575,9 @@
         "type": "package"
       },
       "jQuery/3.7.1": {
+        "type": "package"
+      },
+      "Jquery.slimScroll/1.3.1": {
         "type": "package"
       },
       "Microsoft.AspNet.Cors/5.0.0": {
@@ -2013,6 +2025,9 @@
       "jQuery/3.7.1": {
         "type": "package"
       },
+      "Jquery.slimScroll/1.3.1": {
+        "type": "package"
+      },
       "Microsoft.AspNet.Cors/5.0.0": {
         "type": "package",
         "compile": {
@@ -2372,6 +2387,19 @@
         "jquery.nuspec"
       ]
     },
+    "Jquery.slimScroll/1.3.1": {
+      "sha512": "xfYJIkeb3ZqMp6VPMCoFfmIuV+w0oLUWYH+dtt3JxRUTb6L+w1cafJmtotcrsH9niGUSAoh1fhtTLOghaoGh+Q==",
+      "type": "package",
+      "path": "jquery.slimscroll/1.3.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/Scripts/jquery.slimscroll.js",
+        "content/Scripts/jquery.slimscroll.min.js",
+        "jquery.slimscroll.1.3.1.nupkg.sha512",
+        "jquery.slimscroll.nuspec"
+      ]
+    },
     "Microsoft.AspNet.Cors/5.0.0": {
       "sha512": "jNwFhEnm0jRlaRCgHEk52hJQltVoM2Bllysv2NtPYrgsVWyS3r5BOtCXkM/lEZ5AdUUBOvha+4QAVcVp1MZp5g==",
       "type": "package",
@@ -2708,6 +2736,7 @@
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.8": [
       "FontAwesome >= 4.7.0",
+      "Jquery.slimScroll >= 1.3.1",
       "Microsoft.AspNet.SignalR >= 2.2.2",
       "Microsoft.Owin >= 4.2.2",
       "Microsoft.Owin.Cors >= 4.2.2",
@@ -2719,24 +2748,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\epele\\.nuget\\packages\\": {},
+    "C:\\Users\\ZMAJ OD SIPOVA\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\epele\\source\\repos\\YUchat\\YUchat\\YUchat.csproj",
+      "projectUniqueName": "C:\\Users\\ZMAJ OD SIPOVA\\Documents\\GitHub\\YUchat\\YUchat\\YUchat.csproj",
       "projectName": "YUchat",
-      "projectPath": "C:\\Users\\epele\\source\\repos\\YUchat\\YUchat\\YUchat.csproj",
-      "packagesPath": "C:\\Users\\epele\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\epele\\source\\repos\\YUchat\\YUchat\\obj\\",
+      "projectPath": "C:\\Users\\ZMAJ OD SIPOVA\\Documents\\GitHub\\YUchat\\YUchat\\YUchat.csproj",
+      "packagesPath": "C:\\Users\\ZMAJ OD SIPOVA\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ZMAJ OD SIPOVA\\Documents\\GitHub\\YUchat\\YUchat\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\epele\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ZMAJ OD SIPOVA\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2759,6 +2788,10 @@
           "FontAwesome": {
             "target": "Package",
             "version": "[4.7.0, )"
+          },
+          "Jquery.slimScroll": {
+            "target": "Package",
+            "version": "[1.3.1, )"
           },
           "Microsoft.AspNet.SignalR": {
             "target": "Package",
